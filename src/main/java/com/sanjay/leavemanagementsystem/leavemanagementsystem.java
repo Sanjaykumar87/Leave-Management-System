@@ -4,9 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class git add .
-git commit -m "Add project screenshots"
-git pushleavemanagementsystem {
+public class leavemanagementsystem{
 
     public static void main(String[] args) {
         SpringApplication.run(leavemanagementsystem.class, args);

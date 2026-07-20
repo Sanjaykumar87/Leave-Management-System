@@ -1,0 +1,95 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Login Page */
+
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-box {
+    width: 400px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 25px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+/* Dashboard Cards */
+
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,.2);
+}
+
+/* Tables */
+
+.table {
+    background: white;
+}
+
+.table th {
+    background: #0d6efd;
+    color: white;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn {
+    border-radius: 8px;
+}
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table th {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.table td {
+    padding: 15px;
+}

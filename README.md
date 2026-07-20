@@ -1,160 +1,53 @@
-# 🏢 Leave Management System
+# Leave Management System
 
-A modern, full-stack **Leave Management System** built using **Spring Boot**, **React**, **MySQL**, and **JWT Authentication**. The application streamlines employee leave management by providing secure role-based access for **Administrators** and **Employees**.
+A full-stack Leave Management System that streamlines the leave request process within an organization. The application provides secure authentication, role-based authorization, employee management, and leave approval workflows through a modern web interface.
+
+## Overview
+
+This project is designed to automate leave management for organizations by eliminating manual leave tracking. Employees can submit leave requests and monitor their status, while administrators can manage employee records and approve or reject leave applications.
+
+The application follows a client-server architecture with a React frontend communicating with a Spring Boot REST API secured using JWT authentication.
 
 ---
 
-## 📖 Overview
+## Features
 
-The Leave Management System is designed to automate the leave request workflow within an organization. Employees can apply for leave and monitor their leave history, while administrators can efficiently manage employees and approve or reject leave requests through a secure and user-friendly interface.
-
----
-
-## ✨ Key Features
-
-### 🔐 Authentication & Security
+### Authentication
 - JWT-based Authentication
-- Spring Security Integration
-- Password Encryption using BCrypt
+- Secure Login
+- BCrypt Password Encryption
 - Role-Based Authorization
-- Secure REST APIs
+- Protected REST APIs
 
----
+### Employee
+- Login
+- Apply for Leave
+- View Leave History
+- Track Leave Status
 
-### 👨‍💼 Admin Features
-
+### Administrator
 - Dashboard
-- Employee Management
-  - Add Employee
-  - Update Employee
-  - Delete Employee
-  - View Employee Details
+- Employee Management (Create, Read, Update, Delete)
 - View All Leave Requests
 - Approve Leave Requests
 - Reject Leave Requests
-- Manage Employee Records
 
 ---
 
-### 👨 Employee Features
+## Technology Stack
 
-- Secure Login
-- Dashboard
-- Apply Leave
-- View Leave History
-- Track Leave Status
-- Logout
-
----
-
-## 🛠️ Tech Stack
-
-### Backend
-
-- Java 21
-- Spring Boot
-- Spring Security
-- Spring Data JPA (Hibernate)
-- JWT Authentication
-- Maven
-- MySQL
-
-### Frontend
-
-- React
-- Vite
-- Bootstrap 5
-- Bootstrap Icons
-- Axios
-- React Router DOM
-
-### Database
-
-- MySQL
-
-### Development Tools
-
-- IntelliJ IDEA
-- Visual Studio Code
-- Postman
-- Git
-- GitHub
+| Layer | Technology |
+|--------|------------|
+| Frontend | React, Vite, Bootstrap 5, Axios |
+| Backend | Spring Boot, Spring Security, Spring Data JPA |
+| Database | MySQL |
+| Authentication | JWT |
+| Build Tool | Maven |
+| Version Control | Git & GitHub |
 
 ---
 
-# 📸 Application Screenshots
-
-## 🔐 Login Page
-
-> Add Screenshot
-
-```
-screenshots/login.png
-```
-
----
-
-## 📊 Admin Dashboard
-
-> Add Screenshot
-
-```
-screenshots/admin-dashboard.png
-```
-
----
-
-## 👤 Employee Dashboard
-
-> Add Screenshot
-
-```
-screenshots/employee-dashboard.png
-```
-
----
-
-## 👥 Employee Management
-
-> Add Screenshot
-
-```
-screenshots/employees.png
-```
-
----
-
-## 📝 Apply Leave
-
-> Add Screenshot
-
-```
-screenshots/apply-leave.png
-```
-
----
-
-## 📋 My Leave History
-
-> Add Screenshot
-
-```
-screenshots/my-leaves.png
-```
-
----
-
-## ✅ Admin Leave Management
-
-> Add Screenshot
-
-```
-screenshots/admin-leaves.png
-```
-
----
-
-# 📂 Project Structure
+## Project Structure
 
 ```
 Leave-Management-System
@@ -162,13 +55,12 @@ Leave-Management-System
 ├── backend
 │   ├── src
 │   ├── pom.xml
-│   └── application.properties
+│   └── ...
 │
 ├── frontend
 │   ├── src
 │   ├── public
-│   ├── package.json
-│   └── vite.config.js
+│   └── ...
 │
 ├── screenshots
 │
@@ -177,25 +69,59 @@ Leave-Management-System
 
 ---
 
-# 🚀 Getting Started
+## 📸Application Screenshots
 
-## 1️⃣ Clone the Repository
+### 🔐Login
+
+![Login](screenshots/login.png)
+
+---
+
+### 📊Admin Dashboard
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+---
+
+### 👤Employee Dashboard
+
+![Employee Dashboard](screenshots/employee-dashboard.png)
+
+---
+
+### 📝Apply Leave
+
+![Apply Leave](screenshots/apply-leave.png)
+
+---
+
+### 📋My Leaves
+
+![My Leaves](screenshots/my-leave.png)
+
+---
+
+### ✅Leave Management
+
+![Leave Management](screenshots/admin-leave.png)
+
+---
+
+## Installation
+
+### Clone the repository
 
 ```bash
 git clone https://github.com/Sanjaykumar87/Leave-Management-System.git
 ```
 
----
-
-## 2️⃣ Backend Setup
-
-Navigate to the backend folder.
+### Backend
 
 ```bash
 cd backend
 ```
 
-Update your **application.properties**
+Configure the database in `application.properties`.
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/leavemanagement
@@ -203,13 +129,13 @@ spring.datasource.username=root
 spring.datasource.password=your_password
 ```
 
-Run the application
+Run the application.
 
 ```bash
 mvn spring-boot:run
 ```
 
-Backend runs on
+Backend URL
 
 ```
 http://localhost:8080
@@ -217,27 +143,15 @@ http://localhost:8080
 
 ---
 
-## 3️⃣ Frontend Setup
-
-Navigate to frontend
+### Frontend
 
 ```bash
 cd frontend
-```
-
-Install dependencies
-
-```bash
 npm install
-```
-
-Start the React application
-
-```bash
 npm run dev
 ```
 
-Frontend runs on
+Frontend URL
 
 ```
 http://localhost:5173
@@ -245,83 +159,45 @@ http://localhost:5173
 
 ---
 
-# 🔑 User Roles
+## REST API Modules
 
-## 👨‍💼 Admin
-
+- Authentication
 - Employee Management
-- View Employees
-- Approve Leave
-- Reject Leave
-- View All Leave Requests
+- Leave Management
 
 ---
 
-## 👨 Employee
+## Security
 
-- Apply Leave
-- View Leave History
-- Track Leave Status
-
----
-
-# 📡 REST API Modules
-
-- Authentication API
-- Employee API
-- Leave API
-
----
-
-# 📈 Future Enhancements
-
-- Forgot Password
-- Email Notifications
-- Leave Balance Calculation
-- Search & Filter
-- Pagination
-- Export Reports (PDF / Excel)
-- Employee Profile Management
-- Cloud Deployment
-
----
-
-# 🎯 Learning Outcomes
-
-This project demonstrates practical knowledge of:
-
-- Spring Boot REST APIs
 - Spring Security
 - JWT Authentication
-- React Development
-- State Management
-- Axios API Integration
-- MySQL Database Design
-- CRUD Operations
-- Role-Based Authorization
-- Full-Stack Application Development
+- BCrypt Password Encoding
+- Role-Based Access Control
 
 ---
 
-# 👨‍💻 Author
+## Future Improvements
 
-## Sanjay Kumar S
+- Email Notifications
+- Leave Balance Management
+- Forgot Password
+- Profile Management
+- Search & Filter
+- Pagination
+- Report Export (PDF & Excel)
+
+---
+
+## Author
+
+**Sanjay Kumar S**
 
 Computer Science and Engineering Student
 
-GitHub:
-https://github.com/Sanjaykumar87
+GitHub: https://github.com/Sanjaykumar87
 
 ---
 
-# ⭐ Support
+## License
 
-If you found this project helpful, please consider giving it a ⭐ on GitHub.
-
-It motivates me to build more open-source projects.
-
----
-
-## 📜 License
-
-This project is developed for learning and educational purposes.
+This project is intended for educational and learning purposes.
